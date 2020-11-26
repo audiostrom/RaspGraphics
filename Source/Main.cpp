@@ -76,6 +76,14 @@ public:
 
             setVisible (true);
             setFullScreen(true);
+            
+            juce::DocumentWindow *wind = dynamic_cast<juce::DocumentWindow *>(getTopLevelComponent());
+            if (wind != nullptr)
+            {
+             wind->setFullScreen(!wind->isFullScreen());
+             wind->setMouseCursor(juce::MouseCursor::NoCursor);
+            }
+            
         }
 
         void closeButtonPressed() override

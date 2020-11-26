@@ -110,8 +110,8 @@ void WidgetBase::animate()
         setState(transOut);
     }
     if (currentState==transOut && (frame>secondsToFrame(transitionTime+holdTime+transitionTime))) setState(off);
-    //repaint(0,getHeight()-100,500,100);
-    repaint();
+    repaint(0,getHeight()-100,500,100);
+   // repaint();
 }
 
 void WidgetBase::setState(WidgetBase::GFXState newState)

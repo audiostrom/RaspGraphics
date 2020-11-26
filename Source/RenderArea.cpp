@@ -37,7 +37,7 @@ void RenderArea::resized()
     // components that your component contains..
     for (auto &wid : widgets)
     {
-        wid->setBounds(getLocalBounds());
+        wid->setBounds(getLocalBounds().withTrimmedBottom(32));
     }
 }
 

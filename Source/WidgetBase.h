@@ -23,7 +23,7 @@ public:
     ~WidgetBase() override;
 
     enum GFXState{off,transIn, transOut, displaying};
-    static const int frameRate=50;
+    static const int frameRate=25;
 
     void paint (juce::Graphics&) override;
     void resized() override;

@@ -19,6 +19,13 @@ MainComponent::MainComponent()
 
     testElement = engine.createNewGraphics("");
 
+    juce::DocumentWindow *wind = dynamic_cast<juce::DocumentWindow *>(getTopLevelComponent());
+    if (wind != nullptr)
+    {
+     wind->setFullScreen(!wind->isFullScreen());
+     wind->setMouseCursor(juce::MouseCursor::NoCursor);
+    }
+    
    /* fillTest = std::make_unique<WidgetBase>();
     cutTest = std::make_unique<WidgetBase>();
 

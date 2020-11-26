@@ -18,7 +18,7 @@ transitionTime(3.0f),
 holdTime(5.0f),
 currentState(off)
 {
-    setOpaque(true);
+    setOpaque(false);
     setGfxSize(juce::Point<float>(300.0f,100.0f));
     setGfxPos(juce::Point<float>(100.0f,100.0f));
     // In your constructor, you should add any child components, and

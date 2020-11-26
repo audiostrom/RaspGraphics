@@ -23,7 +23,7 @@ GFXEngine::GFXEngine()
     fillArea = std::make_unique<RenderArea>();
     cutArea = std::make_unique<RenderArea>();
     cutArea->setCutMode(true);
-    startTimerHz(50);
+    startTimerHz(25);
 }
 
 GFXEngine::~GFXEngine()

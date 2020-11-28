@@ -21,6 +21,7 @@ currentState(off)
     setOpaque(false);
     setGfxSize(juce::Point<float>(300.0f,100.0f));
     setGfxPos(juce::Point<float>(100.0f,100.0f));
+    //this->setBufferedToImage(true);
     // In your constructor, you should add any child components, and
     // initialise any special settings that your component needs.
 
@@ -111,7 +112,8 @@ void WidgetBase::animate()
     }
     if (currentState==transOut && (frame>secondsToFrame(transitionTime+holdTime+transitionTime))) setState(off);
     //repaint(0,getHeight()-100,500,100);
-    repaint();
+
+    repaint(juce::Rectangle<float>(gfxPos.getX(),gfxPos.getY(),gfxSize.getX(),gfxSize.getY()).toNearestIntEdges());
 }
 
 void WidgetBase::setState(WidgetBase::GFXState newState)

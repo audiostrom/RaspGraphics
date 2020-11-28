@@ -34,7 +34,7 @@ MainComponent::MainComponent()
 
 
 
-    setSize (600, 400);
+    setSize (3840, 1080);
 
     //this is not solved, who has/owns/creates the widgets, how do you create them etc, etc
 

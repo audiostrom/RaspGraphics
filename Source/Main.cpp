@@ -80,7 +80,7 @@ public:
             juce::DocumentWindow *wind = dynamic_cast<juce::DocumentWindow *>(getTopLevelComponent());
             if (wind != nullptr)
             {
-             wind->setFullScreen(!wind->isFullScreen());
+             wind->setFullScreen(true);
              wind->setMouseCursor(juce::MouseCursor::NoCursor);
             }
             

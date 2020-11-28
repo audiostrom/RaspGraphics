@@ -4,6 +4,8 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="PBcGGs" name="Graphics">
     <GROUP id="{E53F617A-B81B-9E9F-9062-AA931EFB85C3}" name="Source">
+      <FILE id="DuhdwJ" name="LowerThird.cpp" compile="1" resource="0" file="Source/LowerThird.cpp"/>
+      <FILE id="hWhQhR" name="LowerThird.h" compile="0" resource="0" file="Source/LowerThird.h"/>
       <FILE id="mq1zbM" name="GraphicsElement.cpp" compile="1" resource="0"
             file="Source/GraphicsElement.cpp"/>
       <FILE id="zYKHAA" name="GraphicsElement.h" compile="0" resource="0"
